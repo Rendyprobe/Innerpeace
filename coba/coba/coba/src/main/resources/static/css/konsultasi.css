@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #9cc7ff, #cde9ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgb(189, 255, 233);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 75px; /* Default width */
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.subtitle1 {
+    text-align: left;
+}
+
+.button {
+    background: #408b97;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: #e8e8e8;
+}
+
+
+
+
+
+.exit {
+    margin-top: 40px; /* Atur jarak ke bawah dengan margin ini */
+    background: #ffdddd;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.exit:hover {
+    background: #d5acac;
+}
+
+.kotak_hasil {
+    position : relative;
+    background: #408b97;
+    border: 10px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    text-align:left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

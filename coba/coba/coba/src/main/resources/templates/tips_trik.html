@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Terbaru</title>
+    <link rel="stylesheet" href="/css/cobaartikel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sticky-header">Judul Berita</div>
+
+        <div class="content">
+            <h1 class="title">Judul Berita</h1>
+            <p class="date">Tanggal: 26 Desember 2024</p>
+            <div class="article">
+                <p th:text="${content}">Isi artikel akan muncul di sini.</p>
+            </div>
+        </div>
+    </div>
+      <div class="button-container">
+        <a href="/home" class="kembali">KEMBALI</a>
+        <a href="/home" class="keluar">KELUAR</a>
+      </div>
+</body>
+</html>

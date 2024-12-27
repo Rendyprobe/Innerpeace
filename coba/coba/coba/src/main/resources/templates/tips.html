@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">Judul Artikel</title>
+</head>
+<body>
+    <header>
+        <h1 th:text="${title}">Judul Artikel</h1>
+    </header>
+    <main>
+        <p th:text="${content}">Isi artikel akan muncul di sini.</p>
+    </main>
+    <footer>
+        <a href="/home">Kembali ke Halaman Utama</a>
+    </footer>
+</body>
+</html>

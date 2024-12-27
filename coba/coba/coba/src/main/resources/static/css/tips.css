@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #9cc7ff, #cde9ff);
+    margin:20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 1000px; /* Batas maksimal lebar container */
+    height: 85%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center; /* Mengatur posisi horizontal */
+    align-items: center;    /* Mengatur posisi vertikal */
+    background: rgb(189, 255, 233);
+
+    padding-top: 0; 
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+  
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: auto; /* Membuat scroll muncul jika isi melebihi ukuran */
+    flex-wrap: wrap; /* Agar item bisa berpindah ke baris berikutnya */
+    gap: 1px; 
+}
+
+
+
+.title {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.subtitle1 {
+    text-align: left;
+}
+
+
+
+
+.button:hover {
+    background: #e8e8e8;
+}
+
+.keluar-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr; /* Tombol kiri dan kanan di sisi-sisi grid */
+    width: 60%;
+    gap: 10px; /* Memberikan jarak antara tombol */
+}
+
+.keluar, .kembali {
+    margin-top: 8px; /* Atur jarak ke bawah dengan margin ini */
+    background: #ffdddd;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+.kembali:hover, .keluar:hover{
+    background: #d5acac;
+}
+
+
+
+.kotak_tips {
+    position : relative;
+    width: 85%; /* Lebar kotak */
+    height: 200px; /* Tinggi kotak */
+    background: #408b97;
+    border: 10px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gambar_tips {
+    position: absolute; /* Posisi relatif terhadap .kotak_hasil */
+    top: 20px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan */
+    width: 180px; /* Lebar kotak */
+    height: 180px; /* Tinggi kotak */
+    overflow: hidden; /* Agar gambar tidak keluar dari kotak */
+    display: flex;
+}
+.gambar_tips img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.sticky-header {
+    position: sticky;
+    width: 100%;
+    height: 30px;
+    top: 0; /* Tetap di atas saat di-scroll */
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    z-index: 10; /* Supaya berada di atas elemen lain */
+
+
+}

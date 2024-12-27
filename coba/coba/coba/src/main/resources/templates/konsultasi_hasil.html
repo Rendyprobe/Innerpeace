@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsultasi</title>
+    <link rel="stylesheet" href="/css/konsultasi.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/gambar/konsultasi.jpg" alt="Logo" >
+        </div>
+        <div class="title">KONSULTASI</div>
+
+        <div class="kotak_hasil">
+            Anda memilih keluhan: <strong th:text="${issue}"></strong>
+            <p>Konsultan yang kami rekomendasikan:</p>
+            <p><strong th:text="${consultant}"></strong></p>
+
+            <a th:href="${whatsappLink}" class="button" target="_blank">WhatsApp Psikolog</a>
+
+        </div>
+
+
+        <a href="/home" class="exit">KELUAR</a>
+    </div>
+</body>
+</html>
